@@ -1,0 +1,95 @@
+/* Pengaturan Dasar Halaman */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333333;
+}
+
+/* Kontainer Utama */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigasi / Menu */
+.menu {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 15px;
+}
+
+.menu a {
+    color: #4a5568;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #1a365d;
+}
+
+/* Grup Tombol */
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Pengaturan Dasar Tombol (.btn) dengan Properti Transition */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Tombol 1: btn-grow (Membesar saat disentuh kursor) */
+.btn-grow {
+    background-color: #3182ce;
+    color: #ffffff;
+}
+
+.btn-grow:hover {
+    transform: scale(1.05);
+    background-color: #2b6cb0;
+}
+
+/* Tombol 2: btn-darken (Warna menggelap saat disentuh kursor) */
+.btn-darken {
+    background-color: #dd6b20;
+    color: #ffffff;
+}
+
+.btn-darken:hover {
+    background-color: #c05621;
+}
+
+/* Footer & Tautan Kembali */
+footer {
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #3182ce;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
