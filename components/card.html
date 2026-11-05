@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komponen Card</title>
+    <style>
+        /* Tag Selector untuk Styling Dasar */
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Class Selector untuk Pembungkus Card */
+        .card {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        /* Pseudo-class Selector (:hover) pada Card */
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Pengaturan Tag Gambar di dalam Card */
+        .card-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Bagian Konten Teks di dalam Card */
+        .card-body {
+            padding: 20px;
+        }
+
+        /* Descendant Selector untuk Judul */
+        .card-body h3 {
+            color: #1a252f;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        /* Descendant Selector untuk Paragraf */
+        .card-body p {
+            color: #555555;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Class Selector untuk Tombol di dalam Card */
+        .card-btn {
+            display: inline-block;
+            background-color: #004080;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Pseudo-class Selector (:hover) untuk Tombol */
+        .card-btn:hover {
+            background-color: #002040;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Komponen Card Utama -->
+    <div class="card">
+        <!-- Menampilkan Gambar (Pastikan file gambar tersedia di folder assets/images/) -->
+        <img src="/assets/images/Immanuel.jpg" alt="Ilustrasi Proyek" class="card-img">
+        
+        <div class="card-body">
+            <h3>Proyek Portofolio</h3>
+            <p>
+                Ini adalah proyek latihan saya untuk pekerjaan saya sebagai siswa di Sekolah Kristen Immanuel dari jurusan TKJ
+                </p>
+            <a href="#" class="card-btn">Lihat Detail</a>
+        </div>
+    </div>
+
+</body>
+</html>
