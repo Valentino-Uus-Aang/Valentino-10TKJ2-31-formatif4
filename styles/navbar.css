@@ -1,0 +1,105 @@
+/* Pengaturan Dasar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* Header Utama */
+#main-header {
+    background-color: #1a365d;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigasi menggunakan Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+/* Logo di sebelah kiri */
+.navbar > .logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+/* Daftar Menu menggunakan Flexbox & Selector Child (>) */
+.navbar > .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu > li {
+    margin-left: 20px;
+}
+
+/* Tautan Menu (Anchor) */
+.nav-menu > li > a.nav-link {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.nav-menu > li > a.nav-link:hover {
+    color: #ffffff;
+}
+
+/* Konten Utama & Halaman */
+.main-content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.content-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.content-box h1 {
+    margin-top: 0;
+    color: #1a365d;
+    font-size: 22px;
+}
+
+.content-box p {
+    color: #4a5568;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.back-link {
+    display: inline-block;
+    color: #3182ce;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #718096;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 60px;
+}
