@@ -1,0 +1,97 @@
+/* Pengaturan Dasar Halaman */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333333;
+}
+
+/* Bagian Section dengan id gallery */
+#gallery {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul Galeri */
+#gallery > h2 {
+    text-align: center;
+    color: #1a365d;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Pembungkus Grid untuk 6 Kartu */
+#gallery > div.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Elemen Artikel dalam Galeri */
+.gallery > article.gallery-item {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+}
+
+.gallery > article.gallery-item:hover {
+    transform: translateY(-3px);
+}
+
+/* Gambar di dalam Artikel */
+.gallery-item > img {
+    width: 100%;
+    height: 140px;
+    object-fit: contain; /* Mengubah dari cover agar gambar tampil utuh */
+    background-color: #f8fafc; /* Memberikan warna latar belakang bingkai jika rasio gambar berbeda */
+    display: block;
+}
+
+/* Judul Pendek di dalam Artikel */
+.gallery-item > h3 {
+    font-size: 14px;
+    color: #2d3748;
+    text-align: center;
+    padding: 12px 10px;
+    margin: 0;
+}
+
+/* Footer & Tautan Kembali */
+#gallery > footer {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
+
+#gallery > footer > a {
+    color: #3182ce;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#gallery > footer > a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif untuk Layar Kecil */
+@media (max-width: 768px) {
+    #gallery > div.gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #gallery > div.gallery {
+        grid-template-columns: 1fr;
+    }
+}
