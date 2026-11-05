@@ -1,0 +1,102 @@
+/* Pengaturan Dasar Halaman */
+body {
+    background-color: #f4f6f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    color: #333333;
+}
+
+/* Bagian Hero dengan Background Gambar dan Efek Lapisan Gelap */
+#hero {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/assets/images/kodingan.avif);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Konten di dalam Hero */
+.hero-content {
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+    animation: fadeInSlideUp 1.2s ease-out forwards;
+}
+
+/* Selector Grouping dan Descendant untuk Judul, Subjudul, dan Tombol */
+#hero .hero-content h1,
+#hero .hero-content p {
+    margin: 0 0 15px 0;
+}
+
+#hero .hero-content h1 {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+#hero .hero-content p {
+    font-size: 15px;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+/* Tombol Interaktif */
+#hero .hero-content a.btn {
+    display: inline-block;
+    background-color: #dd6b20;
+    color: #ffffff;
+    padding: 10px 22px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#hero .hero-content a.btn:hover {
+    background-color: #c05621;
+    transform: scale(1.05);
+}
+
+/* Definisi Animasi @keyframes (Teks naik dari bawah sambil memudar) */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer & Tautan Kembali */
+footer {
+    max-width: 800px;
+    margin: 25px auto 0 auto;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
+
+footer a {
+    color: #3182ce;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
