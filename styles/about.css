@@ -1,0 +1,73 @@
+/* Reset & Tampilan Dasar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Pembungkus utama */
+main {
+    width: 100%;
+}
+
+/* Section dengan id "about" yang menggunakan gambar latar */
+#about {
+    background-image: url(/assets/images/koding.webp); /* Sesuaikan nama file gambar di assets/images/ */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Kotak Teks di Dalam Section */
+.about-box {
+    background-color: #ffffff;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Judul di dalam kotak */
+.about-box h2 {
+    color: #1a252f;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Paragraf di dalam kotak */
+.about-box p {
+    color: #555555;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+/* Teks kecil / Sub-keterangan */
+.about-box .subtitle {
+    font-size: 11px;
+    color: #888888;
+    text-align: right;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* Container Tautan di Luar Section Gambar */
+.nav-footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.back-link {
+    color: #004080;
+    text-decoration: underline;
+    font-size: 14px;
+}
