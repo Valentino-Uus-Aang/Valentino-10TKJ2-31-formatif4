@@ -1,0 +1,87 @@
+/* Pengaturan Dasar Halaman */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* Header Utama */
+header {
+    background-color: #1a365d;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Main Container */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Section Components & Pages */
+#components, #pages {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#components h2, #pages h2 {
+    font-size: 16px;
+    color: #2d3748;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #edf2f7;
+    padding-bottom: 8px;
+}
+
+/* Daftar Tautan (ul & li) */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+li a {
+    color: #dd6b20;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+li a:hover {
+    color: #c05621;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #e2e8f0;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    color: #4a5568;
+    font-weight: 500;
+}
