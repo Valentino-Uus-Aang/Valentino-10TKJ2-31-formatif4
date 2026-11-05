@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Modul 2.3</title>
+    <style>
+        /* Pengaturan Dasar Halaman */
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333333;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Judul Header Formulir */
+        .header-title {
+            background-color: #1a365d;
+            color: #ffffff;
+            text-align: center;
+            padding: 12px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        /* Grup Formulir (Label & Input) */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #2d3748;
+            margin-bottom: 8px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            box-sizing: border-box;
+            background-color: #f8fafc;
+            transition: border-color 0.2s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: #1a365d;
+            background-color: #ffffff;
+        }
+
+        /* Area Teks Pesan */
+        textarea.form-control {
+            resize: vertical;
+            height: 120px;
+        }
+
+        /* Tombol Kirim */
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background-color: #1a365d;
+            color: #ffffff;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #2a4365;
+        }
+
+        /* Tombol Kembali ke Beranda */
+        .footer-nav {
+            text-align: center;
+            margin-top: 25px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+
+        .btn-back {
+            display: inline-block;
+            background-color: #475569;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .btn-back:hover {
+            background-color: #334155;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Judul Header -->
+        <div class="header-title">Formulir Kontak</div>
+
+        <!-- Elemen Formulir -->
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan nama lengkap Anda" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="nama@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan atau Komentar</label>
+                <textarea id="pesan" name="pesan" class="form-control" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Kirim Pesan</button>
+        </form>
+
+        <!-- Navigasi Bawah -->
+        <div class="footer-nav">
+            <a href="../index.html" class="btn-back">&larr; Kembali ke Beranda</a>
+        </div>
+    </div>
+
+</body>
+</html>
